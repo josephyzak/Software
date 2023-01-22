@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/Style_hoja_1.css">
+    <!--<script src="./script/urls.js"></script>-->
+</head>
+<body class="dark">
+    <aside>
+        <div class="sidebar">
+            <div class="profile-photo">
+                <img src= <%- myImg_ %> class="logo-perfil">
+                <p>Hola, <b><%- Nombre_ %></b></p>
+                <div>
+                    <small class="text-muted">ID:</small>
+                    <small class="text-muted" id="myID_"><b><%- myID_ %></b></small>
+                    <small class="text-muted"> / <%- Tipo_ %></small>
+                    <div style="display:none;"><small id="myColor"><%- myColor %></small></div>
+                </div>
+            </div>
+            <a href="/Home" id="op1" onclick="button_up(1)">
+                <span class="material-symbols-outlined">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="/DashBoard" id="op2" onclick="button_up(2)">
+                <span class="material-symbols-outlined">dashboard</span>
+                <h3>DashBoard</h3>
+            </a>
+            <a href="/Configuracion" id="op3" onclick="button_up(3)">
+                <span class="material-symbols-outlined">settings</span>
+                <h3>Configuración</h3>
+            </a>
+            <a href="/Ayuda" id="op4" onclick="button_up(4)">
+                <span class="material-symbols-outlined">help</span>
+                <h3>Ayuda</h3>
+            </a>
+            <a href="/Out" id="op5">
+                <span class="material-symbols-outlined">logout</span>
+                <h3>Log-out</h3>
+            </a>
+        </div>
+    </aside>
+    <%- body %>
+</body>
+<!--<script src="./script/button.js"></script>-->
+</html>

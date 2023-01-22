@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/Style_login.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="container">
+	    <div class="form-container sign-up-container">
+		    <form action="/registrar" method="Post">
+			    <h1>Crear Cuenta</h1>
+			    <div class="social-container">
+				    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			    </div>
+			    <span>o use su correo electrónico para registrarse</span>
+			    <input type="text" placeholder="Name" name="nombre" required/>
+			    <input type="email" placeholder="Email" name="email" required/>
+			    <input type="password" placeholder="Password" name="password1" required/>
+				<input type="password" placeholder="Repetir Password" name="password2" required/>
+				<input type="file" name="myFile" required>
+				<select name="tipo" type="name" required>
+					<option value="Maestro">Maestro</option>
+					<option value="Alumno">Alumno</option>
+				</select>
+			    <button>Inscribirse</button>
+		    </form>
+	    </div>
+	    <div class="form-container sign-in-container">
+		    <form action="/autentificar" method="Post">
+			    <h1>Registrarse</h1>
+			    <div class="social-container">
+				    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			    </div>
+			    <span>o usa tu cuenta</span>
+			    <input type="email" placeholder="Email" name="email" required/>
+			    <input type="password" placeholder="Password" name="password" required/>
+			    <a href="#">¿Olvidaste tu contraseña?</a>
+			    <button>Registrarse</button>                
+		    </form>
+	    </div>
+	    <div class="overlay-container">
+		    <div class="overlay">
+			    <div class="overlay-panel overlay-left">
+				    <h1>¡Bienvenido de nuevo!</h1>
+				    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+				    <button class="ghost" id="signIn">Registrarse</button>
+                    <button class="ghost"><a href="http://localhost:3000/">CANCELAR</a></button>
+			    </div>
+			    <div class="overlay-panel overlay-right">
+				    <h1>¡Hola, amigo!</h1>
+				    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+				    <button class="ghost" id="signUp">Inscribirse</button>
+                    <button class="ghost"><a href="http://localhost:3000/">CANCELAR</a></button>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+    <script src="./script/login.js"></script>
+</body>
+</html>
