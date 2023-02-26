@@ -3,8 +3,8 @@ const mariadb = require("mariadb");
 const config = {
     host: "localhost",
     user: "root",
-    password: "",
-    database: "box",
+    password: "pachafarm123",
+    database: "PachaData",
     connectionLimit: 5,
     acquireTime: 300
 };

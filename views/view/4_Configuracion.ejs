@@ -1,134 +1,212 @@
 <link rel="stylesheet" href="./css/Style_Configuracion.css">
-
+<div id="perist_1" hidden><%- Perist_1 %></div>
+<div id="perist_2" hidden><%- Perist_2 %></div>
+<div id="perist_3" hidden><%- Perist_3 %></div>
+<div id="perist_4" hidden><%- Perist_4 %></div>
+<div id="perist_5" hidden><%- Perist_5 %></div>
+<div id="tipoPaso_1" hidden><%- tipoPaso_1 %></div>
+<div id="tipoPaso_2" hidden><%- tipoPaso_2 %></div>
+<div id="tipoPaso_3" hidden><%- tipoPaso_3 %></div>
+<div id="tipoPaso_4" hidden><%- tipoPaso_4 %></div>
+<div id="tipoPaso_5" hidden><%- tipoPaso_5 %></div>
+<div id="sentidoPaso_1" hidden><%- sentidoPaso_1 %></div>
+<div id="sentidoPaso_2" hidden><%- sentidoPaso_2 %></div>
+<div id="sentidoPaso_3" hidden><%- sentidoPaso_3 %></div>
+<div id="sentidoPaso_4" hidden><%- sentidoPaso_4 %></div>
+<div id="sentidoPaso_5" hidden><%- sentidoPaso_5 %></div>
 <main>
-    <div class="Bomba_contenedor">
-        <div class="Bomba">
-            <h1>Bomba Peristaltica 1</h1>
-            <div class="Bomba_Enable">
-                <h2>Habilitar</h3>
-                <input type="checkbox" name="" id="check_1" onchange="showContent(1)">
+    <div class="columna">
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Bomba Peristaltica 1</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_1" onchange="showContent(1)">
+                </div>
+                <div class="my_select">
+                    <select id="microPaso_1" disabled>
+                        <option value="1" selected>Paso Completo</option>
+                        <option value="2">Medio Paso</option>
+                        <option value="3">Cuarto de Paso</option>
+                        <option value="4">Octova de Paso</option>
+                        <option value="5">Decimosexto de Paso</option>
+                    </select>
+                </div>
+                <div class="my_select">
+                    <select id="Sentido_1" disabled>
+                        <option value="0" selected>Horario</option>
+                        <option value="1">Anto Horario</option>
+                    </select>
+                </div>
+                <button id="Guardar_1" disabled onclick="Guardar(1)">Guardar</button>
+                <button id="Reset_1" disabled onclick="Reset(1)">Reset</button>
             </div>
-            <div class="my_select">
-                <select id="microPaso_1" disabled>
-                    <option value="1" selected>Paso Completo</option>
-                    <option value="2">Medio Paso</option>
-                    <option value="3">Cuarto de Paso</option>
-                    <option value="4">Octova de Paso</option>
-                    <option value="5">Decimosexto de Paso</option>
-                </select>
+        </div>
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Bomba Peristaltica 2</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2" onchange="showContent(2)">
+                </div>
+                <div class="my_select">
+                    <select id="microPaso_2" disabled>
+                        <option value="1" selected>Paso Completo</option>
+                        <option value="2">Medio Paso</option>
+                        <option value="3">Cuarto de Paso</option>
+                        <option value="4">Octova de Paso</option>
+                        <option value="5">Decimosexto de Paso</option>
+                    </select>
+                </div>
+                <div class="my_select">
+                    <select id="Sentido_2" disabled>
+                        <option value="0" selected>Horario</option>
+                        <option value="1">Anto Horario</option>
+                    </select>
+                </div>
+                <button id="Guardar_2" disabled onclick="Guardar(2)">Guardar</button>
+                <button id="Reset_2" disabled onclick="Reset(2)">Reset</button>
             </div>
-            <div class="my_select">
-                <select id="Sentido_1" disabled>
-                    <option value="0" selected>Horario</option>
-                    <option value="1">Anto Horario</option>
-                </select>
+        </div>
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Bomba Peristaltica 3</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_3" onchange="showContent(3)">
+                </div>
+                <div class="my_select">
+                    <select id="microPaso_3" disabled>
+                        <option value="1" selected>Paso Completo</option>
+                        <option value="2">Medio Paso</option>
+                        <option value="3">Cuarto de Paso</option>
+                        <option value="4">Octova de Paso</option>
+                        <option value="5">Decimosexto de Paso</option>
+                    </select>
+                </div>
+                <div class="my_select">
+                    <select id="Sentido_3" disabled>
+                        <option value="0" selected>Horario</option>
+                        <option value="1">Anto Horario</option>
+                    </select>
+                </div>
+                <button id="Guardar_3" disabled onclick="Guardar(3)">Guardar</button>
+                <button id="Reset_3" disabled onclick="Reset(3)">Reset</button>
             </div>
-            <button id="Guardar_1" disabled onclick="Guardar(1)">Guardar</button>
-            <button id="Reset_1" disabled onclick="Reset(1)">Reset</button>
+        </div>
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Bomba Peristaltica 4</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_4" onchange="showContent(4)">
+                </div>
+                <div class="my_select">
+                    <select id="microPaso_4" disabled>
+                        <option value="1" selected>Paso Completo</option>
+                        <option value="2">Medio Paso</option>
+                        <option value="3">Cuarto de Paso</option>
+                        <option value="4">Octova de Paso</option>
+                        <option value="5">Decimosexto de Paso</option>
+                    </select>
+                </div>
+                <div class="my_select">
+                    <select id="Sentido_4" disabled>
+                        <option value="0" selected>Horario</option>
+                        <option value="1">Anto Horario</option>
+                    </select>
+                </div>
+                <button id="Guardar_4" disabled onclick="Guardar(4)">Guardar</button>
+                <button id="Reset_4" disabled onclick="Reset(4)">Reset</button>
+            </div>
+        </div>
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Bomba Peristaltica 5</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_5" onchange="showContent(5)">
+                </div>
+                <div class="my_select">
+                    <select id="microPaso_5" disabled>
+                        <option value="1" selected>Paso Completo</option>
+                        <option value="2">Medio Paso</option>
+                        <option value="3">Cuarto de Paso</option>
+                        <option value="4">Octova de Paso</option>
+                        <option value="5">Decimosexto de Paso</option>
+                    </select>
+                </div>
+                <div class="my_select">
+                    <select id="Sentido_5" disabled>
+                        <option value="0" selected>Horario</option>
+                        <option value="1">Anto Horario</option>
+                    </select>
+                </div>
+                <button id="Guardar_5" disabled onclick="Guardar(5)">Guardar</button>
+                <button id="Reset_5" disabled onclick="Reset(5)">Reset</button>
+            </div>
         </div>
     </div>
-    <div class="Bomba_contenedor">
-        <div class="Bomba">
-            <h1>Bomba Peristaltica 2</h1>
-            <div class="Bomba_Enable">
-                <h2>Habilitar</h3>
-                <input type="checkbox" name="" id="check_2" onchange="showContent(2)">
+    <div class="columna">
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Peristaltica 1</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2_1" onchange="showContentBox(1)">
+                </div>
+                <h3>Ingresar cantidad de pasos</h3>
+                <input type="text" id="Pasos_1" disabled>
+                <button id="Ejecutar_1" disabled onclick="Ejecutar(1)">Ejecutar</button>
             </div>
-            <div class="my_select">
-                <select id="microPaso_2" disabled>
-                    <option value="1" selected>Paso Completo</option>
-                    <option value="2">Medio Paso</option>
-                    <option value="3">Cuarto de Paso</option>
-                    <option value="4">Octova de Paso</option>
-                    <option value="5">Decimosexto de Paso</option>
-                </select>
-            </div>
-            <div class="my_select">
-                <select id="Sentido_2" disabled>
-                    <option value="0" selected>Horario</option>
-                    <option value="1">Anto Horario</option>
-                </select>
-            </div>
-            <button id="Guardar_2" disabled onclick="Guardar(2)">Guardar</button>
-            <button id="Reset_2" disabled onclick="Reset(2)">Reset</button>
         </div>
-    </div>
-    <div class="Bomba_contenedor">
-        <div class="Bomba">
-            <h1>Bomba Peristaltica 3</h1>
-            <div class="Bomba_Enable">
-                <h2>Habilitar</h3>
-                <input type="checkbox" name="" id="check_3" onchange="showContent(3)">
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Peristaltica 2</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2_2" onchange="showContentBox(2)">
+                </div>
+                <h3>Ingresar cantidad de pasos</h3>
+                <input type="text" id="Pasos_2" disabled>
+                <button id="Ejecutar_2" disabled onclick="Ejecutar(2)">Ejecutar</button>
             </div>
-            <div class="my_select">
-                <select id="microPaso_3" disabled>
-                    <option value="1" selected>Paso Completo</option>
-                    <option value="2">Medio Paso</option>
-                    <option value="3">Cuarto de Paso</option>
-                    <option value="4">Octova de Paso</option>
-                    <option value="5">Decimosexto de Paso</option>
-                </select>
-            </div>
-            <div class="my_select">
-                <select id="Sentido_3" disabled>
-                    <option value="0" selected>Horario</option>
-                    <option value="1">Anto Horario</option>
-                </select>
-            </div>
-            <button id="Guardar_3" disabled onclick="Guardar(3)">Guardar</button>
-            <button id="Reset_3" disabled onclick="Reset(3)">Reset</button>
         </div>
-    </div>
-    <div class="Bomba_contenedor">
-        <div class="Bomba">
-            <h1>Bomba Peristaltica 4</h1>
-            <div class="Bomba_Enable">
-                <h2>Habilitar</h3>
-                <input type="checkbox" name="" id="check_4" onchange="showContent(4)">
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Peristaltica 3</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2_3" onchange="showContentBox(3)">
+                </div>
+                <h3>Ingresar cantidad de pasos</h3>
+                <input type="text" id="Pasos_3" disabled>
+                <button id="Ejecutar_3" disabled onclick="Ejecutar(3)">Ejecutar</button>
             </div>
-            <div class="my_select">
-                <select id="microPaso_4" disabled>
-                    <option value="1" selected>Paso Completo</option>
-                    <option value="2">Medio Paso</option>
-                    <option value="3">Cuarto de Paso</option>
-                    <option value="4">Octova de Paso</option>
-                    <option value="5">Decimosexto de Paso</option>
-                </select>
-            </div>
-            <div class="my_select">
-                <select id="Sentido_4" disabled>
-                    <option value="0" selected>Horario</option>
-                    <option value="1">Anto Horario</option>
-                </select>
-            </div>
-            <button id="Guardar_4" disabled onclick="Guardar(4)">Guardar</button>
-            <button id="Reset_4" disabled onclick="Reset(4)">Reset</button>
         </div>
-    </div>
-    <div class="Bomba_contenedor">
-        <div class="Bomba">
-            <h1>Bomba Peristaltica 5</h1>
-            <div class="Bomba_Enable">
-                <h2>Habilitar</h3>
-                <input type="checkbox" name="" id="check_5" onchange="showContent(5)">
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Peristaltica 4</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2_4" onchange="showContentBox(4)">
+                </div>
+                <h3>Ingresar cantidad de pasos</h3>
+                <input type="text" id="Pasos_4" disabled>
+                <button id="Ejecutar_4" disabled onclick="Ejecutar(4)">Ejecutar</button>
             </div>
-            <div class="my_select">
-                <select id="microPaso_5" disabled>
-                    <option value="1" selected>Paso Completo</option>
-                    <option value="2">Medio Paso</option>
-                    <option value="3">Cuarto de Paso</option>
-                    <option value="4">Octova de Paso</option>
-                    <option value="5">Decimosexto de Paso</option>
-                </select>
+        </div>
+        <div class="Bomba_contenedor">
+            <div class="Bomba">
+                <h1>Peristaltica 5</h1>
+                <div class="Bomba_Enable">
+                    <h2>Habilitar</h3>
+                    <input type="checkbox" name="" id="check_2_5" onchange="showContentBox(5)">
+                </div>
+                <h3>Ingresar cantidad de pasos</h3>
+                <input type="text" id="Pasos_5" disabled>
+                <button id="Ejecutar_5" disabled onclick="Ejecutar(5)">Ejecutar</button>
             </div>
-            <div class="my_select">
-                <select id="Sentido_5" disabled>
-                    <option value="0" selected>Horario</option>
-                    <option value="1">Anto Horario</option>
-                </select>
-            </div>
-            <button id="Guardar_5" disabled onclick="Guardar(5)">Guardar</button>
-            <button id="Reset_5" disabled onclick="Reset(5)">Reset</button>
         </div>
     </div>
 </main>

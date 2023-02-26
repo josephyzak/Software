@@ -2,6 +2,7 @@ const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const session = require("express-session");
 const fileUpLoad = require("express-fileupload");
+const cors = require("cors");
 
 const router = require("./routes");
 
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(express.static("./public"));
 app.use(expressLayouts);
 app.use(fileUpLoad());
+app.use(cors());
 
 app.use(session({
     secret: "secret",
